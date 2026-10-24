@@ -1,0 +1,170 @@
+# ============================================================================== #
+#                         AuraServerQoL Configuration
+# ============================================================================== #
+# Config file built for v1.1.0
+# config-version: 2
+# ------------------------------------------------------------------------------ #
+# Dynamic Lighting Settings
+# ------------------------------------------------------------------------------ #
+AuraDynamicLighting:
+  enabled: true
+
+# ------------------------------------------------------------------------------ #
+# Auto Tool Replacement Settings
+# ------------------------------------------------------------------------------ #
+AuraToolBreakReplacement:
+  enabled: true
+  # If true, replacements match exact tool type first (e.g., Iron Pickaxe -> Iron Pickaxe)
+  # If false, searches tier hierarchy (NETHERITE > DIAMOND > IRON > STONE > GOLDEN > WOODEN)
+  prioritize-same-tool-type: true
+
+# ------------------------------------------------------------------------------ #
+# Boat Jump & Auto-Hurdle Settings
+# ------------------------------------------------------------------------------ #
+AuraBoatJump:
+  enabled: true
+  # Cooldown period (in ticks) between triggering manual jumps
+  cooldown-ticks: 15
+  # Allowed blocks under the boat to trigger jumping
+  # You may add more block types here if you want to allow jumping on land/ice/etc.
+  allowed-blocks:
+    - WATER
+    - SEAGRASS
+    - KELP
+  # Manual Boat Jump Settings (Triggered by Swap Hands keybind 'F' key)
+  # Use these settings to tune the jumps to your liking
+  manual-jump:
+    vertical-velocity: 0.6
+    push-speed: 0.38
+  # Automatic Obstacle Hurdle Settings
+  # Use these settings to tune the obstacle clearance to your liking
+  auto-hurdle:
+    vertical-velocity: 0.35
+    push-speed: 0.28
+
+# ------------------------------------------------------------------------------ #
+# Portable Item Disposal Settings
+# ------------------------------------------------------------------------------ #
+# Allows for right-clicking a lava bucket in player inventory
+# to open portable trash can
+AuraItemDisposal:
+  enabled: true
+
+# ------------------------------------------------------------------------------ #
+# Auto-Harvest & Replant Settings
+# ------------------------------------------------------------------------------ #
+# Automatically replants harvested crops when right-clicked
+# and the player has the required seed/crop to replant
+AuraAutoHarvest:
+  enabled: true
+  # Whether to require the player to have the seed/crop to replant
+  require-seeds: true
+
+# ------------------------------------------------------------------------------ #
+# AuraHarvestXP
+# ------------------------------------------------------------------------------ #
+# Award XP for harvesting fully grown crops
+AuraHarvestXP:
+  enabled: true
+  min-xp: 1
+  max-xp: 3
+
+# ------------------------------------------------------------------------------ #
+# Update Checker Settings
+# ------------------------------------------------------------------------------ #
+CheckForUpdates: true
+
+# ============================================================================== #
+#                             AuraMobShield Settings                             #
+# ============================================================================== #
+AuraMobShield:
+  enabled: true
+
+  # Global entity whitelist allowed inside ANY shield zone on the server.
+  # Entities listed here will NEVER be eliminated by any mob shield.
+  # This list attempts to include all passive mobs and items.
+  # You may edit it as you wish.
+  global-whitelist:
+    - PLAYER
+    - VILLAGER
+    - WANDERING_TRADER
+    - IRON_GOLEM
+    - SNOW_GOLEM
+    - COW
+    - MOOSHROOM
+    - SHEEP
+    - PIG
+    - CHICKEN
+    - GOAT
+    - LLAMA
+    - TRADER_LLAMA
+    - CAMEL
+    - SNIFFER
+    - BEE
+    - AXOLOTL
+    - FOX
+    - PANDA
+    - POLAR_BEAR
+    - TURTLE
+    - FROG
+    - TADPOLE
+    - OCELOT
+    - RABBIT
+    - STRIDER
+    - HORSE
+    - DONKEY
+    - MULE
+    - SKELETON_HORSE
+    - ZOMBIE_HORSE
+    - CAT
+    - WOLF
+    - PARROT
+    - COD
+    - SALMON
+    - SQUID
+    - GLOW_SQUID
+    - TROPICAL_FISH
+    - PUFFERFISH
+    - DOLPHIN
+    - BOAT
+    - CHEST_BOAT
+    - MINECART
+    - CHEST_MINECART
+    - FURNACE_MINECART
+    - HOPPER_MINECART
+    - TNT_MINECART
+    - SPAWNER_MINECART
+    - COMMAND_BLOCK_MINECART
+    - ITEM_FRAME
+    - GLOW_ITEM_FRAME
+    - ARMOR_STAND
+    - PAINTING
+    - INTERACTION
+    - BLOCK_DISPLAY
+    - TEXT_DISPLAY
+    - ITEM_DISPLAY
+    - MARKER
+    - ITEM
+    - DROPPED_ITEM
+    - EXPERIENCE_ORB
+    - ARROW
+    - SPECTRAL_ARROW
+    - TRIDENT
+    - ENDER_PEARL
+    - FIREWORK_ROCKET
+    - FISHING_BOBBER
+    - EGG
+    - SNOWBALL
+    - SPLASH_POTION
+    - LINGERING_POTION
+    - XP_BOTTLE
+    - FIREBALL
+    - SMALL_FIREBALL
+    - DRAGON_FIREBALL
+    - WITHER_SKULL
+
+  # Visual & Audio Effects when a mob touches a shield boundary
+  effects:
+    particles: true
+    sounds: true
+    clear-drops-and-xp: true
