@@ -1,0 +1,30 @@
+# ============================================================================== #
+#                            AuraMobShield Zones                                 #
+# ============================================================================== #
+# Add shield zones here manually, or use /aurashield create <id> <radius> in-game.
+#
+# FILE FORMAT EXAMPLE:
+#
+# shields:
+#   spawn-main:
+#     enabled: true
+#     world: "world"
+#     x: 0.0
+#     y: 64.0
+#     z: 0.0
+#     radius: 50.0
+#     # Optional shield-specific whitelist (IN ADDITION to global-whitelist in config.yml)
+#     # Entities listed here will be spared ONLY inside this specific shield.
+#     whitelist:
+#       - ZOMBIE
+#       - SKELETON
+#
+#   pvp-arena:
+#     enabled: true
+#     world: "world_nether"
+#     x: 100.0
+#     y: 70.0
+#     z: -200.0
+#     radius: 30.0
+
+shields: {}
