@@ -1,8 +1,10 @@
 # ============================================================================== #
-#                         AuraServerQoL Configuration
+#                         AuraServerQoL Configuration Notes
 # ============================================================================== #
-# Config file built for v1.1.0
-# config-version: 2
+# Config file updated for v1.1.0
+# Check for config file updates at https://www.oneeyebear.net/asqol-config
+# Report Bugs at https://github.com/oneeyebear90/AuraServerQoL/issues
+# Join the Aura Discord and Aura Minecraft Server at https://discord.gg/XmVXXzZ42u
 # ------------------------------------------------------------------------------ #
 # Dynamic Lighting Settings
 # ------------------------------------------------------------------------------ #
