@@ -23,6 +23,8 @@ Please report any found bugs here on GitHub!
 
 * **Automatic Crop Replanting:** When players right click to harvest crops, the crop is automatically replanted if the player has the seed/crop necessary to replant in their inventory.
 
+* **Farming Earns XP:** Players are awarded with XP when they harvest crops. XP amount is configurable by min and max values, awarded xp is randomized between those values.
+
 * **Mob Shields:** Admins can create Mob Shields allowing for safe areas that mobs are not allowed to enter. Fully customizable in size, location, naming, and entity whitelisting. Use the command to disable/enable, add/delete, specific shields. Whitelisting entities can be set globally and each shield can have it's own optional whitelist to allow specific mobs access (in addition to the primary global whitelist)
 
 ---
