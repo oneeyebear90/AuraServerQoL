@@ -25,6 +25,10 @@ Please report any found bugs here on GitHub!
 
 * **Farming Earns XP:** Players are awarded with XP when they harvest crops. XP amount is configurable by min and max values, awarded xp is randomized between those values.
 
+* **Container/Chest Sorting: (`/aurasort`)** An item sort button populates in the lower-right inventory slot for chests, barrels, shulker boxes, etc. When clicked the items inside of the chest are consolidated into their maximum stacks and sorted into groups of alike items. The sort items can be placed in the same slot as the sort button so you do not lose an inventory slot because of the button. 
+
+* **Item Salvage:** Sneak and Right-Click any Grindstone to open an Item Salvage interface. Craftable items can be broken down into their recipe ingredients and given back to the player.
+
 * **Mob Shields:** Admins can create Mob Shields allowing for safe areas that mobs are not allowed to enter. Fully customizable in size, location, naming, and entity whitelisting. Use the command to disable/enable, add/delete, specific shields. Whitelisting entities can be set globally and each shield can have it's own optional whitelist to allow specific mobs access (in addition to the primary global whitelist)
 
 ---
@@ -42,9 +46,13 @@ Please report any found bugs here on GitHub!
   * Toggle dynamic lighting feature
 - `auraserverqol.auratoolbreak` - Allows usage of `/auratoolbreak` (Default: `true`)
   * Toggle tool replacement feature
+- `auraserverqol.aurasort` - Allows usage of `/aurasort` (Default: `true`)
+  * Toggle the appearance of the item sort button in containers
+- `auraserverqol.book` - Allows usage of `/aurabook` (Default: `true`)
+  * Gives the player a reference book of AuraServerQoL features and player commands
 - `auraserverqol.shield` - Allows usage of `/aurashield` command management (Default: `op`)
   * Create, delete, list, and toggle mob shield zones
   * Create an Aura Mob Shield in this format `/aurashield create <name/id> <radius>`
     * Shield is created at the players location they are standing. Finer editing can be made in shields.yml
-- `auraserverqol.admin` - Access to `/auraserverqol reload` and update notifications (Default: `op`)
+- `auraserverqol.admin` - Access to `/auraserverqol <reload|info|update>` and update notifications (Default: `op`)
   * Reload plugin config
