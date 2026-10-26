@@ -1,7 +1,7 @@
 # ============================================================================== #
 #                         AuraServerQoL Configuration Notes
 # ============================================================================== #
-# Config file updated for v1.1.0
+# Config file updated for v1.2.0
 # Check for config file updates at https://www.oneeyebear.net/asqol-config
 # Report Bugs at https://github.com/oneeyebear90/AuraServerQoL/issues
 # Join the Aura Discord and Aura Minecraft Server at https://discord.gg/XmVXXzZ42u
@@ -72,9 +72,30 @@ AuraHarvestXP:
   max-xp: 3
 
 # ------------------------------------------------------------------------------ #
-# Update Checker Settings
+# Salvage & Uncrafting Settings
 # ------------------------------------------------------------------------------ #
-CheckForUpdates: true
+# Shift + Right-Click on a Grindstone to open the Item Salvage Station
+AuraSalvageItems:
+  enabled: true
+  # Whether to allow potions, splash potions, lingering potions, and tipped arrows to be salvaged
+  allow-potion-salvage: false
+  # Items listed here cannot be salvaged in the GUI
+  blacklisted-items:
+    - NETHERITE_INGOT
+    - NETHERITE_SCRAP
+    - ENCHANTED_GOLDEN_APPLE
+    - BEACON
+    - NETHER_STAR
+    - RESPAWN_ANCHOR
+    - CHIPPED_ANVIL
+    - DAMAGED_ANVIL
+
+# ------------------------------------------------------------------------------ #
+# Inventory Sorting Settings
+# ------------------------------------------------------------------------------ #
+# Places a sort button in storage container slot
+AuraSortInventory:
+  enabled: true
 
 # ============================================================================== #
 #                             AuraMobShield Settings                             #
@@ -170,3 +191,8 @@ AuraMobShield:
     particles: true
     sounds: true
     clear-drops-and-xp: true
+
+# ------------------------------------------------------------------------------ #
+# Update Checker Settings
+# ------------------------------------------------------------------------------ #
+CheckForUpdates: true
