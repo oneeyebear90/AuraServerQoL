@@ -14,10 +14,12 @@ Please report any found bugs here on GitHub!
 
 ## 🌟 What Does AuraServerQoL Do?
 * **Dynamic Lighting for all: (`/auralights`)** Activated by the player holding a light source such as a torch/lantern/glowstone/etc. in their mainhand or off-hand. Normally a feature that is limited to those clients with loaded shaders or client-side mods. We change that requirement allowing anyone that joins your server to enjoy the feature. Light brightness is equivalent to the held item's light output vanilla value.
+  * Flares Update (Plugin v1.3.0+) - Dynamic Lighting now follows player dropped light sources for a flare effect that burns out after 30 seconds.
  
 * **Auto Tool Replacement: (`/auratoolbreak`)** Automatically swaps broken tools with a fresh matching tool or sword from the player's inventory or hotbar so mining, farming, and combat remain seamless.
 
 * **Boat Jumping & Auto-Hurdling:** Improved boat navigation! Automatic Hurdling makes navigating the waters a lot easier. Boats will pull themselves over obstacles like ice/shore banks/lilypads. Additionally, players can manually launch boats over 1-block obstacles by pressing the **Swap Hands Key (F)**. Tunable settings in the config file.
+  * Manual jump not compatible with Bedrock clients
 
 * **Portable Item Disposal:** Open a safe item disposal window by right-clicking on a Lava Bucket, allowing players to permanently purge unwanted junk items from their inventories without dropping items on the ground.
 
@@ -44,6 +46,8 @@ Please report any found bugs here on GitHub!
 ## 📋 Permissions
 - `auraserverqol.lights` - Allows usage of `/auralights` (Default: `true`)
   * Toggle dynamic lighting feature
+- `auraserverqol.disposal` - Allows usage of `/auradisposal` (Default: `true`)
+  * Opens portable item disposal when player has a lava bucket in their inventory. Added for Bedrock player compatibility (Plugin v1.3.0+).
 - `auraserverqol.auratoolbreak` - Allows usage of `/auratoolbreak` (Default: `true`)
   * Toggle tool replacement feature
 - `auraserverqol.aurasort` - Allows usage of `/aurasort` (Default: `true`)
