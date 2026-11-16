@@ -1,7 +1,7 @@
 # ============================================================================== #
 #                         AuraServerQoL Configuration Notes
 # ============================================================================== #
-# Config file updated for v1.2.0
+# Config file updated for v2.0.0
 # Check for config file updates at https://www.oneeyebear.net/asqol-config
 # Report Bugs at https://github.com/oneeyebear90/AuraServerQoL/issues
 # Join the Aura Discord and Aura Minecraft Server at https://discord.gg/XmVXXzZ42u
@@ -63,13 +63,21 @@ AuraAutoHarvest:
   require-seeds: true
 
 # ------------------------------------------------------------------------------ #
-# AuraHarvestXP
+# AuraHarvestXP Settings
 # ------------------------------------------------------------------------------ #
 # Award XP for harvesting fully grown crops
 AuraHarvestXP:
   enabled: true
   min-xp: 1
   max-xp: 3
+
+# ------------------------------------------------------------------------------ #
+# Custom Safe Fall Distance Settings
+# ------------------------------------------------------------------------------ #
+AuraFallDistance:
+  enabled: true
+  # The distance (in blocks) a player can fall before taking damage (Default vanilla is 3.0)
+  safe-distance: 6.0
 
 # ------------------------------------------------------------------------------ #
 # Salvage & Uncrafting Settings
@@ -98,7 +106,7 @@ AuraSortInventory:
   enabled: true
 
 # ============================================================================== #
-#                             AuraMobShield Settings                             #
+# AuraMobShield Settings
 # ============================================================================== #
 AuraMobShield:
   enabled: true
@@ -191,6 +199,82 @@ AuraMobShield:
     particles: true
     sounds: true
     clear-drops-and-xp: true
+
+# ------------------------------------------------------------------------------ #
+# AuraHUD Settings
+# ------------------------------------------------------------------------------ #
+AuraHUD:
+  enabled: true
+  # Default update tick is 5 (0.25 seconds) shouldn't need adjustment
+  update-interval-ticks: 5
+  bossbar:
+    # Available colors: PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE (case-sensitive)
+    color: 'BLUE'
+    # Available styles: PROGRESS, NOTCHED_6, NOTCHED_10, NOTCHED_12, NOTCHED_20 (case-sensitive)
+    style: 'PROGRESS'
+    # Fill percentage (0.0 to 1.0, where 1.0 is 100% full)
+    value: 1.0
+  style:
+    band-text: 'AURA'
+    currency-symbol: '$'
+    separator: '|'
+    # The world name used to pull global time for the HUD (ensures Nether/End show Overworld time)
+    time-world: 'overworld'
+    # 12h or 24h time format
+    time-format: '24h'
+    # Economy/Balance Number Formatting Settings
+    # If true, formats 1000000 as 1,000,000
+    economy-use-commas: true
+    # If true, uses decimal places (e.g. 50.00). If false, uses decimals only if they exist.
+    economy-decimals: false
+  # Colors accept HEX (e.g. '#FF0000'), Color Codes (e.g. '&c'), and standard color names (e.g. 'red')
+  colors:
+    currency-symbol: 'gold'
+    brand: 'gold'
+    separator: 'dark_gray'
+    balance: 'green'
+    coords: 'white'
+    direction: 'gold'
+    direction-parentheses: 'white'
+    time: 'yellow'
+    biome: 'green'
+    afk: 'yellow'
+  # Valid layout placeholders - Layout also accepts color codes and PlaceholderAPI Placeholders
+  # {afk}, {balance}, {biome}, {brand}, {coords}, {currency}, {direction}, {separator}, {time}
+
+  layout: '{brand} {separator} {currency}{balance} {separator} {coords} {direction} {separator} {time} {separator} {biome} {afk}'
+
+# ------------------------------------------------------------------------------ #
+# AuraTimeAndSleep Settings
+# ------------------------------------------------------------------------------ #
+AuraTimeAndSleep:
+  enabled: true
+  # Allow multiple players to use a single bed
+  share-beds: true
+  # Ignore nearby hostile mobs blocking sleep
+  ignore-mob-proximity: true
+  # Time cycle multipliers in minutes (Vanilla default is 10.0 min for day, 10.0 min for night)
+  day-cycle-time: 10.0
+  night-cycle-time: 10.0
+  # Max Active Players before sleep-threshold-multi is used instead.
+  sleep-threshold-normal-max-players: 2 # See threshold normal/multi examples below
+  # Sleep threshold percentages
+  sleep-threshold-normal: 1.0   # example: 100% required for 1-2 players
+  sleep-threshold-multi: 0.5    # example: 50% required for 3+ players
+  # If true, resets phantom insomnia for all online players; if false, only those who slept
+  apply-rest-to-all: false
+  # AFK Provider (aura, essentialsx, cmi, purpur, placeholderapi, none)
+  afk-provider: aura
+  afk-timeout-minutes: 5.0
+  # Placeholder string used when afk-provider is set to 'placeholderapi'
+  afk-placeholder: '%essentials_afk%'
+  # Broadcast to chat when players go AFK or return
+  afk-broadcast: true
+  # Broadcast messages (supports & color codes). Set to '' or "" to disable entirely.
+  messages:
+    day-broadcast: '&6[AuraTime] &eThe sun is rising. Good morning!'
+    night-broadcast: '&6[AuraTime] &dThe sun is setting. Night has fallen!'
+    sleep-broadcast: '&6[AuraSleep] &eThe night passes peacefully. Rise and shine!'
 
 # ------------------------------------------------------------------------------ #
 # Update Checker Settings
