@@ -2,10 +2,6 @@ Download Aura Server QoL Plugin from these trusted hosts!
 
 [![Modrinth Version](https://img.shields.io/modrinth/v/auraserverqol?style=flat-square&logo=modrinth&label=Modrinth)](https://modrinth.com/plugin/auraserverqol) [![Hangar](https://img.shields.io/badge/Hangar-AuraServerQoL-blue?style=flat-square&logo=paperMC&logoColor=white)](https://hangar.papermc.io/oneeyebear/AuraServerQoL)
 
-Please report any found bugs here on GitHub!
-
-[![GitHub Issues](https://img.shields.io/github/issues/oneeyebear90/AuraServerQoL?style=flat-square&logo=github)](https://github.com/oneeyebear90/AuraServerQoL/issues)
-
 # <center>AuraServerQoL</center>
 <center>Each feature can be disabled/adjusted in the config.</center>
 <br>
@@ -21,11 +17,25 @@ Please report any found bugs here on GitHub!
 
 </details>
 
+<p align="center">
+  Please report any found bugs on GitHub or Discord!<br><br>
+  <a href="https://github.com/oneeyebear90/AuraServerQoL/issues">
+    <img src="https://img.shields.io/github/issues/oneeyebear90/AuraServerQoL?style=for-the-badge&logo=github" alt="GitHub Issues">
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://discord.gg/XmVXXzZ42u">
+    <img src="https://img.shields.io/badge/Discord-Join%20Server-4E9F6E?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
+  </a>
+</p>
+
 ## 🚀 Why Download AuraServerQoL?
 
 * **100% Vanilla Client Compatible:** Deliver popular modded-style features to your players without forcing players to install Fabric, Forge, or client mods. Bridging the gap for console players or players that just don't know how to install mods.
 * **Fully Configurable:** Every module can be toggled or tuned inside `config.yml`. Don't want boat jumping or dynamic lighting on your server? Simply switch them to `false`!
 * **Optimized for Paper:** Built asynchronously and thread-safe from the ground up to prevent tick lag, or server performance dips.
+<p align="center">
+  <img src="https://github.com/oneeyebear90/AuraServerQoL/blob/15f7dc4e32261fe699fec11dde8f74d4048e2a08/FeaturesASQoL-ezgif.com-optimize.gif?raw=true" alt="Image showing various features of the plugin" width="600">
+</p>
 
 ## <center>🌟AuraServerQoL Features</center>
 
