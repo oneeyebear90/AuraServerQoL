@@ -219,7 +219,7 @@ AuraHUD:
     currency-symbol: '$'
     separator: '|'
     # The world name used to pull global time for the HUD (ensures Nether/End show Overworld time)
-    time-world: 'overworld'
+    time-world: 'world'
     # 12h or 24h time format
     time-format: '24h'
     # Economy/Balance Number Formatting Settings
